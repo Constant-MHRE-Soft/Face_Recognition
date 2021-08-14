@@ -39,7 +39,7 @@ while True:
            fr.put_text(test_img,predicted_name,x,y)
 
 
-    resized_img = cv2.resize(test_img, (1000, 700))
+    resized_img = cv2.resize(test_img, (720, 720))
     cv2.imshow('face recognition ',resized_img)
     if cv2.waitKey(10) == ord('q'):#wait until 'q' key is pressed
         break
